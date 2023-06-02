@@ -25,8 +25,8 @@ def check_item_exist(item_id, item_type, item_list):
     """Checks if item of any given type exist in specific list, abstract method
 
     Args:
-        item_id (int): id of item
-        item_type (str): type of item (Product/Order)
+        item_id (int): id of item,
+        item_type (str): type of item (Product/Order),
         item_list (list[Products, Orders]): list of items (Product/Order)
 
     Returns:
@@ -48,8 +48,8 @@ def usable_id(item_id, item_type, item_list):
     """Checks if specific id is already in use
 
     Args:
-        item_id (int): id of item
-        item_type (str): type of item (Product/Order)
+        item_id (int): id of item,
+        item_type (str): type of item (Product/Order),
         item_list (list[Products, Orders]): list of items (Product/Order)
 
     Returns:
@@ -108,7 +108,7 @@ def intialise_random_orders(Order, Product):
     """Initialise random orders in catalogue
 
     Args:
-        Order (BaseModel): orders of type Order base model
+        Order (BaseModel): orders of type Order base model,
         Product (BaseModel): products of type Product base model
 
     Returns:
@@ -152,7 +152,7 @@ def check_order_amount(order_amount, real_amount):
     """Checks if the total amount in the order is the same amount as in the catalogue
 
     Args:
-        order_amount (float): total amount inserted in order
+        order_amount (float): total amount inserted in order,
         real_amount (float): total amount calculated from the products in the order
 
     Returns:
